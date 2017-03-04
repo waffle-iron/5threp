@@ -32,7 +32,7 @@ app.get('/do', function(req,res,next){
 })
 
 app.get('/try', function(req,res,next){
-  MongoClient.connect("mongodb://ds119020.mlab.com:19020/heroku_wkltq4q5", function(err, db) {
+  MongoClient.connect("mongodb://test:Aa123456@ds119020.mlab.com:19020/heroku_wkltq4q5", function(err, db) {
   if(!err) {
     console.log("We are connected");
       var collection = db.collection('test');
