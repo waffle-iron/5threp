@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var MongoClient = require('mongodb').MongoClient;
 
-MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
+MongoClient.connect("mongodb://localhost:27017/FITHREP", function(err, db) {
   if(!err) {
     console.log("We are connected");
     db.createCollection("test",function(err,collection){console.log(collection)})
@@ -32,7 +32,7 @@ app.get('/do', function(req,res,next){
 })
 
 app.get('/try', function(req,res,next){
-  MongoClient.connect("mongodb://127.0.0.0:27017/mongodb", function(err, db) {
+  MongoClient.connect("mongodb://localhost:27017/FITHREP", function(err, db) {
   if(!err) {
     console.log("We are connected");
       var collection = db.collection('test');
