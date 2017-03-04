@@ -36,6 +36,7 @@ app.get('/try', function(req,res,next){
   if(!err) {
     console.log("We are connected");
       var collection = db.collection('test');
+      collection.insert({"sucess":true})
       collection.findOne({},function(err,item){res.send(item)});
 
   }
