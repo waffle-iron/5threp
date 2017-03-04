@@ -32,7 +32,7 @@ app.get('/do', function(req,res,next){
 })
 
 app.get('/try', function(req,res,next){
-  MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db) {
+  MongoClient.connect("mongodb://127.0.0.0:27017/mongodb", function(err, db) {
   if(!err) {
     console.log("We are connected");
       var collection = db.collection('test');
