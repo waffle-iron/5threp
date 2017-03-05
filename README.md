@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/RoeiZucker/5threp.png?label=ready&title=Ready)](https://waffle.io/RoeiZucker/5threp)
 # node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
